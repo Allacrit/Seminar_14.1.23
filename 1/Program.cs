@@ -1,4 +1,5 @@
-﻿Console.Write("Введите число в котором проверяем значание: ");
+﻿Console.Clear(); 
+Console.Write("Введите число в котором проверяем значание: ");
 string writeNumber1 = Console.ReadLine();
 int number1 = int.Parse(writeNumber1);
 
