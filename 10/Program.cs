@@ -2,8 +2,6 @@
 Console.WriteLine("Найти третью цифру числа или сообщить, что её нет");
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
-//Console.WriteLine();
-//Console.WriteLine($"Дано число: {number}");
 
 if ((number / 100) > 0)
 {
