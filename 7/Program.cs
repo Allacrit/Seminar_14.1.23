@@ -3,11 +3,17 @@ Console.WriteLine("Показать наибольшую цифру введён
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
 int max = 0;
-if(number < 10 && number > 99)
+if(number < 10 || number > 99)
 {
-    Console.WriteLine($"Число {number} не входит в диапазон данного отрезка");
+    Console.WriteLine($"Число {number} не входит в диапазон данного отрезка.");
 }
 else
+{
+    MaxDigitFunction();
+    Console.WriteLine($"В числе {number} наибольшая цифра {max}");
+}
+
+int MaxDigitFunction()
 {
     int digitOne = number / 10;
     int digitTwo = number % 10;
@@ -19,6 +25,6 @@ else
         {
         max = digitTwo;
         }
-    Console.WriteLine($"В числе {number} наибольшая цифра {max}.");
+    return max;
 }
 
