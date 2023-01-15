@@ -1,4 +1,5 @@
 ﻿Console.Clear();
+Console.WriteLine("Показать вторую цифру трёхзначного числа.");
 Console.Write("Введите трёхзначное число: ");
 int number = int.Parse(Console.ReadLine());
 
